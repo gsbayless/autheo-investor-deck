@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp -r public/* dist/ && node scripts/fix-css.js",
+    "build": "vite build && node scripts/fix-css.js",
     "preview": "vite preview"
   },
   "devDependencies": {

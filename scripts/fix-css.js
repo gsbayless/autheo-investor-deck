@@ -15,7 +15,7 @@ if (fs.existsSync(dir)) {
   console.log('CSS fix applied');
 }
 
-// Ensure public assets are copied to dist (Vite should do this, but Vercel sometimes misses them)
+// Force copy ALL public assets to dist (Vite publicDir sometimes fails on Vercel)
 const publicDir = path.join(__dirname, '..', 'public');
 const distDir = path.join(__dirname, '..', 'dist');
 
@@ -28,13 +28,21 @@ function copyDir(src, dest) {
     if (entry.isDirectory()) {
       copyDir(srcPath, destPath);
     } else {
-      if (!fs.existsSync(destPath)) {
-        fs.copyFileSync(srcPath, destPath);
-        console.log('Copied missing:', entry.name);
-      }
+      // Always copy (overwrite if exists to ensure latest version)
+      fs.copyFileSync(srcPath, destPath);
     }
   }
 }
 
 copyDir(publicDir, distDir);
-console.log('Public assets verified');
+
+// Count copied files
+let count = 0;
+function countFiles(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.isDirectory()) countFiles(path.join(dir, entry.name));
+    else if (entry.name.match(/\.(png|jpg|jpeg)$/i)) count++;
+  }
+}
+countFiles(path.join(distDir, 'assets'));
+console.log(`Public assets copied: ${count} images in dist/assets`);
