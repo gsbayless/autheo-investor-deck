@@ -134,6 +134,16 @@ function initHorizontalDeck(): void {
   // Initialize first slide
   go(0);
 
+  // Open detail overlay if hash fragment present on page load (external links)
+  if (window.location.hash) {
+    const hashId = window.location.hash.replace('#', '');
+    const overlay = document.getElementById(hashId);
+    if (overlay && overlay.classList.contains('detail-overlay')) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
   // Hide hint after 5s
   setTimeout(() => {
     const h = document.querySelector('.deck-hint') as HTMLElement | null;
