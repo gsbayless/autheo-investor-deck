@@ -7,7 +7,7 @@ const publicAssets = resolve(__dirname, 'public/assets')
 const distAssets = resolve(__dirname, 'dist/assets')
 
 export default defineConfig({
-  base: './',
+  base: '/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
