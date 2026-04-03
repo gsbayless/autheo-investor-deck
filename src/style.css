@@ -3328,3 +3328,169 @@ footer.footer { display: none !important; }
     height: 300px !important;
   }
 }
+
+/* ============================================================
+   MOBILE LANDSCAPE — short viewport (phone turned sideways)
+   Target: max-height 500px AND min-width 600px
+   ============================================================ */
+
+@media (max-height: 500px) and (min-width: 600px) {
+
+  /* ── Global: tighten vertical spacing ── */
+  .section {
+    padding: 24px 0 48px !important;
+    overflow-y: auto !important;
+  }
+  .section .container {
+    padding: 0 40px !important;
+  }
+
+  /* ── Typography: scale down for short height ── */
+  .section-heading {
+    font-size: clamp(20px, 4vh, 32px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 8px !important;
+  }
+  .section-subtitle {
+    font-size: 12px !important;
+  }
+  .section-label {
+    font-size: 11px !important;
+    margin-bottom: 4px !important;
+  }
+  .hero-title {
+    font-size: clamp(36px, 12vh, 64px) !important;
+  }
+  .hero-subtitle {
+    font-size: clamp(14px, 3vh, 20px) !important;
+  }
+  .hero-tagline {
+    font-size: 11px !important;
+    letter-spacing: 3px !important;
+  }
+
+  /* ── Navigation: compact for landscape ── */
+  .deck-nav {
+    bottom: 8px !important;
+    right: 12px !important;
+    gap: 4px !important;
+  }
+  .deck-arrow {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 14px !important;
+  }
+  .deck-counter {
+    font-size: 11px !important;
+    min-width: 40px !important;
+  }
+  .deck-dots {
+    bottom: 8px !important;
+    gap: 3px !important;
+  }
+  .deck-dot {
+    width: 5px !important;
+    height: 5px !important;
+  }
+  .deck-hint {
+    display: none !important;
+  }
+
+  /* ── Overview blocks: tighter ── */
+  .overview-block {
+    padding: 10px 14px !important;
+  }
+  .overview-list li {
+    margin-bottom: 4px !important;
+    font-size: 11px !important;
+  }
+
+  /* ── Grids: keep 2-col in landscape (enough width) but reduce gap ── */
+  .section .container div[style*="grid-template-columns: 1fr 1fr"],
+  .section .container div[style*="grid-template-columns:1fr 1fr"] {
+    gap: 16px !important;
+  }
+
+  /* ── Performance slide ── */
+  #performance div[style*="font-size:120px"] {
+    font-size: 56px !important;
+  }
+  #performance div[style*="font-size:22px"] {
+    font-size: 12px !important;
+  }
+
+  /* ── Quantum slide: scale down timeline ── */
+  #quantum div[style*="transform:scale(0.85)"] {
+    transform: scale(0.5) !important;
+    transform-origin: top left !important;
+    margin-bottom: -120px !important;
+  }
+
+  /* ── Investment cards: smaller ── */
+  .invest-card {
+    padding: 12px !important;
+  }
+  .invest-price {
+    font-size: 24px !important;
+  }
+  .invest-type {
+    font-size: 10px !important;
+  }
+
+  /* ── Images: smaller in landscape ── */
+  .section img[style*="max-width:380px"],
+  .section img[style*="max-width:390px"],
+  .section img[style*="max-width:400px"],
+  .section img[style*="max-width:420px"] {
+    max-width: 200px !important;
+  }
+
+  /* ── Watermark ── */
+  .section-logo-watermark {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .section-glow::before {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  /* ── Team photos ── */
+  #team img[style*="width:100px"] {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  /* ── Detail overlays in landscape ── */
+  .detail-overlay > div {
+    padding: 24px 40px 20px !important;
+    overflow-y: auto !important;
+    justify-content: flex-start !important;
+  }
+  .detail-overlay-close {
+    top: 8px !important;
+    right: 12px !important;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 16px !important;
+  }
+}
+
+/* ============================================================
+   SMALL MOBILE PORTRAIT — extra narrow screens (<380px)
+   ============================================================ */
+
+@media (max-width: 380px) {
+  .section .container {
+    padding: 0 16px !important;
+  }
+  .section-heading {
+    font-size: 20px !important;
+  }
+  .hero-title {
+    font-size: 36px !important;
+  }
+  .invest-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
