@@ -3007,13 +3007,14 @@ footer.footer { display: none !important; }
 .detail-overlay > div {
   width: 100%;
   min-height: 100vh;
-  padding: 48px 60px 40px !important;
-  max-width: 100% !important;
-  margin: 0 !important;
+  padding: 48px 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 /* ── Stack diagram container ── */
