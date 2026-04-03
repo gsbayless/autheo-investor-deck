@@ -1837,67 +1837,44 @@
 
 <div id="equity-detail" class="detail-overlay">
   <button class="detail-overlay-close" aria-label="Close">&times;</button>
-  <div style="width:100%; height:100vh; display:flex; flex-direction:column; justify-content:center; padding:0 80px; max-width:1400px; margin:0 auto; box-sizing:border-box;">
+  <div style="width:100%; height:100vh; overflow-y:auto; display:flex; flex-direction:column; justify-content:center; padding:40px 0; max-width:900px; margin:0 auto; box-sizing:border-box;">
 
-    <!-- TOP METRICS — large centered -->
-    <div style="text-align:center; margin-bottom:8px;">
-      <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:4px; margin-bottom:6px;">EQUITY INVESTMENT</div>
-      <div style="font-size:15px; color:#5A6B7A; text-transform:uppercase; letter-spacing:2px; margin-bottom:14px;">Ownership of the Autheo Ecosystem</div>
-      <div style="font-size:72px; font-weight:900; color:#F5A623; line-height:1;">$3 <span style="font-size:30px; color:#B0B8C1; font-weight:600;">per share</span></div>
-      <div style="display:flex; justify-content:center; gap:32px; margin-top:12px; flex-wrap:wrap;">
-        <span style="font-size:14px; color:#B0B8C1;">~$12.5M Valuation</span>
-        <span style="font-size:14px; color:#B0B8C1;">300 THEO Tokens / Share</span>
-        <span style="font-size:14px; color:#B0B8C1;">Launch: <strong style="color:#00E5CC;">$0.08</strong>/THEO</span>
-        <span style="font-size:14px; color:#B0B8C1;">Tier-1 CEX + DEX</span>
+    <div style="text-align:center; margin-bottom:16px;">
+      <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:4px; margin-bottom:6px;">Equity Investment</div>
+      <div style="font-size:14px; color:#5A6B7A; text-transform:uppercase; letter-spacing:2px; margin-bottom:14px;">Ownership of the Autheo Ecosystem</div>
+      <div style="font-size:72px; font-weight:900; color:#F5A623; line-height:1;">$3 <span style="font-size:28px; color:#B0B8C1; font-weight:600;">per share</span></div>
+      <div style="display:flex; justify-content:center; gap:28px; margin-top:12px; flex-wrap:wrap;">
+        <span style="font-size:13px; color:#B0B8C1;">~$12.5M Valuation</span>
+        <span style="font-size:13px; color:#B0B8C1;">300 THEO Tokens / Share</span>
+        <span style="font-size:13px; color:#B0B8C1;">Launch: <strong style="color:#00E5CC;">$0.08</strong>/THEO</span>
+        <span style="font-size:13px; color:#B0B8C1;">Tier-1 CEX + DEX</span>
       </div>
     </div>
 
-    <!-- DIVIDER -->
-    <div style="width:120px; height:2px; background:linear-gradient(90deg, transparent, #00E5CC, transparent); margin:16px auto;"></div>
+    <div style="width:100px; height:2px; background:linear-gradient(90deg, transparent, #00E5CC, transparent); margin:12px auto 20px;"></div>
 
-    <!-- TWO COLUMNS -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:56px; margin-top:8px; align-items:start;">
-
-      <!-- LEFT: Structure + What Equity Represents -->
-      <div>
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Corporate Structure</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2; margin-bottom:20px;">
-          <li><strong style="color:#fff;">Launch Legends, Inc.</strong> <span style="color:#5A6B7A;">— Parent holding company</span></li>
-          <li><strong style="color:#fff;">Legendary IP, LLC</strong> <span style="color:#5A6B7A;">— IP portfolio</span> <a href="https://wyobiz.wyo.gov/business/filingsearch.aspx" target="_blank" rel="noopener" style="color:#00E5CC; font-size:10px;">[Registry]</a></li>
-          <li><strong style="color:#fff;">Autheo, LLC</strong> <span style="color:#5A6B7A;">— Operating company</span> <a href="https://wyobiz.wyo.gov/business/FilingDetails.aspx" target="_blank" rel="noopener" style="color:#00E5CC; font-size:10px;">[Registry]</a></li>
-          <li><strong style="color:#fff;">THEO Token LTD (BVI)</strong> <span style="color:#5A6B7A;">— Token issuance &amp; treasury</span></li>
-          <li><strong style="color:#fff;">Autheo Foundation</strong> <span style="color:#5A6B7A;">— Governance &amp; decentralization</span></li>
-        </ul>
-
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">What Equity Represents</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2;">
-          <li>Ownership of all entities and IP</li>
-          <li>Infrastructure revenue exposure (nodes, enterprise, licensing)</li>
-          <li>Long-term ecosystem value creation</li>
-          <li>Token economics alignment</li>
-        </ul>
+    <!-- 3-column card grid -->
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-bottom:20px;">
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">Corporate Structure</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;"><strong style="color:#fff;">Launch Legends, Inc.</strong> <span style="color:#5A6B7A;">— Parent holding</span><br><strong style="color:#fff;">Legendary IP, LLC</strong> <span style="color:#5A6B7A;">— IP portfolio</span><br><strong style="color:#fff;">Autheo, LLC</strong> <span style="color:#5A6B7A;">— Operating company</span><br><strong style="color:#fff;">THEO Token LTD (BVI)</strong> <span style="color:#5A6B7A;">— Token &amp; treasury</span><br><strong style="color:#fff;">Autheo Foundation</strong> <span style="color:#5A6B7A;">— Governance</span></div>
       </div>
-
-      <!-- RIGHT: Ecosystem Assets + Framing -->
-      <div>
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Ecosystem Assets</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2; margin-bottom:20px;">
-          <li><strong style="color:#fff;">Valkra AI</strong> <span style="color:#5A6B7A;">— Security &amp; audit (35+ chains)</span> <a href="https://valkra.ai" target="_blank" rel="noopener" style="color:#00E5CC; font-size:10px;">[valkra.ai]</a></li>
-          <li><strong style="color:#fff;">Optics Mint</strong> <span style="color:#5A6B7A;">— Secure asset infrastructure</span> <a href="https://opticsmint.com" target="_blank" rel="noopener" style="color:#00E5CC; font-size:10px;">[opticsmint.com]</a></li>
-          <li><strong style="color:#fff;">Cellphone Technology</strong> <span style="color:#5A6B7A;">— Native OS hardware layer</span></li>
-        </ul>
-
-        <p style="font-size:12px; color:#5A6B7A; line-height:1.6; margin-bottom:20px;">Launch Legends, Inc. is the parent holding company — separating operations, IP, token infrastructure, and governance into a scalable, institutional-grade structure.</p>
-
-        <div style="padding:14px 20px; border-radius:8px; background:rgba(245,166,35,0.05); border:1px solid rgba(245,166,35,0.12);">
-          <div style="font-size:10px; color:#F5A623; text-transform:uppercase; letter-spacing:1.5px; font-weight:600;">Investment Framing</div>
-          <p style="font-size:12px; color:#B0B8C1; line-height:1.5; margin:6px 0 0;">Equity includes THEO token allocation prior to public listing (estimated 30&ndash;45 days).</p>
-        </div>
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">Ecosystem Assets</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;"><strong style="color:#fff;">Valkra AI</strong> <span style="color:#5A6B7A;">— Security &amp; audit (35+ chains)</span><br><strong style="color:#fff;">Optics Mint</strong> <span style="color:#5A6B7A;">— Secure asset infrastructure</span><br><strong style="color:#fff;">Cellphone Technology</strong> <span style="color:#5A6B7A;">— Native OS hardware</span></div>
+      </div>
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">What Equity Represents</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;">Ownership of all entities and IP<br>Infrastructure revenue exposure<br>Long-term ecosystem value creation<br>Token economics alignment</div>
       </div>
     </div>
 
-    <!-- BOTTOM CTA -->
-    <div style="text-align:center; margin-top:20px; padding-top:16px; border-top:1px solid rgba(0,229,204,0.06);">
+    <div style="text-align:center; padding:14px 24px; border-radius:8px; background:rgba(245,166,35,0.05); border:1px solid rgba(245,166,35,0.12); margin-bottom:20px;">
+      <div style="font-size:10px; color:#F5A623; text-transform:uppercase; letter-spacing:1.5px; font-weight:600;">Investment Framing</div>
+      <p style="font-size:12px; color:#B0B8C1; line-height:1.5; margin:6px 0 0;">Equity includes THEO token allocation prior to public listing (estimated 30&ndash;45 days).</p>
+    </div>
+
+    <div style="text-align:center; padding-top:16px; border-top:1px solid rgba(0,229,204,0.06);">
       <div style="font-size:11px; color:#EF4444; font-weight:600; letter-spacing:1px; margin-bottom:10px;">OFFER ENDS APRIL 30, 2026</div>
       <a href="mailto:scott@autheo.com" style="display:inline-block; padding:10px 36px; background:#00E5CC; color:#000; font-weight:700; font-size:13px; border-radius:8px; text-decoration:none;">Contact to Invest</a>
     </div>
@@ -1906,79 +1883,63 @@
 
 <div id="node-detail" class="detail-overlay">
   <button class="detail-overlay-close" aria-label="Close">&times;</button>
-  <div style="width:100%; height:100vh; display:flex; flex-direction:column; justify-content:center; padding:0 80px; max-width:1400px; margin:0 auto; box-sizing:border-box;">
+  <div style="width:100%; height:100vh; overflow-y:auto; display:flex; flex-direction:column; justify-content:center; padding:40px 0; max-width:900px; margin:0 auto; box-sizing:border-box;">
 
-    <!-- TOP METRICS -->
-    <div style="text-align:center; margin-bottom:8px;">
-      <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:4px; margin-bottom:6px;">VALIDATOR NODE SALE</div>
-      <div style="font-size:15px; color:#5A6B7A; text-transform:uppercase; letter-spacing:2px; margin-bottom:14px;">Own the Network Infrastructure</div>
+    <div style="text-align:center; margin-bottom:16px;">
+      <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:4px; margin-bottom:6px;">Validator Node Sale</div>
+      <div style="font-size:14px; color:#5A6B7A; text-transform:uppercase; letter-spacing:2px; margin-bottom:14px;">Own the Network Infrastructure</div>
       <div style="font-size:72px; font-weight:900; color:#F5A623; line-height:1;">$7,000</div>
-      <div style="display:flex; justify-content:center; gap:32px; margin-top:12px; flex-wrap:wrap;">
-        <span style="font-size:14px; color:#B0B8C1;">1,300,000 THEO <span style="color:#5A6B7A;">(7-Year Emissions)</span></span>
-        <span style="font-size:14px; color:#B0B8C1;">Launch: <strong style="color:#00E5CC;">$0.08</strong>/THEO</span>
+      <div style="display:flex; justify-content:center; gap:28px; margin-top:12px; flex-wrap:wrap;">
+        <span style="font-size:13px; color:#B0B8C1;">1,300,000 THEO <span style="color:#5A6B7A;">(7-Year Emissions)</span></span>
+        <span style="font-size:13px; color:#B0B8C1;">Launch: <strong style="color:#00E5CC;">$0.08</strong>/THEO</span>
       </div>
     </div>
 
-    <!-- DIVIDER -->
-    <div style="width:120px; height:2px; background:linear-gradient(90deg, transparent, #00E5CC, transparent); margin:16px auto;"></div>
+    <div style="width:100px; height:2px; background:linear-gradient(90deg, transparent, #00E5CC, transparent); margin:12px auto 20px;"></div>
 
-    <!-- TWO COLUMNS -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:56px; margin-top:8px; align-items:start;">
-
-      <!-- LEFT: Function + Revenue Model -->
-      <div>
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">What the Node Does</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2; margin-bottom:20px;">
-          <li>Secures the Layer-1 blockchain</li>
-          <li>Validates all transactions and execution</li>
-          <li>Processes identity, compute, and AI activity</li>
-          <li>Participates in governance and consensus</li>
-        </ul>
-
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Revenue Model</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2; margin-bottom:20px;">
-          <li>Emissions (protocol-defined)</li>
-          <li>Transaction fees (all system activity)</li>
-          <li>Expands into compute, AI, and storage</li>
-        </ul>
+    <!-- 3-column card grid -->
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-bottom:20px;">
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">What the Node Does</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;">Secures the Layer-1 blockchain<br>Validates all transactions and execution<br>Processes identity, compute, and AI activity<br>Participates in governance and consensus</div>
       </div>
-
-      <!-- RIGHT: Economics (2x2 grid) -->
-      <div>
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Node Economics</h3>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:20px;">
-          <div style="padding:16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08); text-align:center;"><div style="font-size:26px; font-weight:900; color:#F5A623;">~500</div><div style="font-size:10px; color:#5A6B7A; margin-top:4px;">THEO / day (avg)</div></div>
-          <div style="padding:16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08); text-align:center;"><div style="font-size:26px; font-weight:900; color:#F5A623;">~15,000</div><div style="font-size:10px; color:#5A6B7A; margin-top:4px;">THEO / month</div></div>
-          <div style="padding:16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08); text-align:center;"><div style="font-size:26px; font-weight:900; color:#F5A623;">~1.3M</div><div style="font-size:10px; color:#5A6B7A; margin-top:4px;">THEO over lifecycle</div></div>
-          <div style="padding:16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08); text-align:center;"><div style="font-size:26px; font-weight:900; color:#00E5CC;">+Fees</div><div style="font-size:10px; color:#5A6B7A; margin-top:4px;">Transaction revenue</div></div>
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">Node Economics</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+          <div style="text-align:center;"><div style="font-size:20px; font-weight:900; color:#F5A623;">~500</div><div style="font-size:9px; color:#5A6B7A;">THEO / day</div></div>
+          <div style="text-align:center;"><div style="font-size:20px; font-weight:900; color:#F5A623;">~15K</div><div style="font-size:9px; color:#5A6B7A;">THEO / month</div></div>
+          <div style="text-align:center;"><div style="font-size:20px; font-weight:900; color:#F5A623;">~1.3M</div><div style="font-size:9px; color:#5A6B7A;">THEO lifecycle</div></div>
+          <div style="text-align:center;"><div style="font-size:20px; font-weight:900; color:#00E5CC;">+Fees</div><div style="font-size:9px; color:#5A6B7A;">Tx revenue</div></div>
         </div>
-
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Network Position</h3>
-        <p style="font-size:12px; color:#B0B8C1; line-height:1.6;">Nodes operate at the execution layer &mdash; the critical intersection where Web2, Web3, and AI converge for validation, consensus, and finalization.</p>
+      </div>
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">Revenue Model</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;">Emissions (protocol-defined)<br>Transaction fees (all system activity)<br>Expands into compute, AI, and storage</div>
       </div>
     </div>
 
-    <!-- BOTTOM CTA -->
-    <div style="text-align:center; margin-top:20px; padding-top:16px; border-top:1px solid rgba(0,229,204,0.06);">
+    <div style="text-align:center; padding:14px 24px; border-radius:8px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08); margin-bottom:20px;">
+      <p style="font-size:12px; color:#B0B8C1; line-height:1.5; margin:0;">Nodes operate at the execution layer — the critical intersection where Web2, Web3, and AI converge for validation, consensus, and finalization.</p>
+    </div>
+
+    <div style="text-align:center; padding-top:16px; border-top:1px solid rgba(0,229,204,0.06);">
       <div style="font-size:12px; color:#F5A623; font-weight:700; margin-bottom:10px;">Node Price goes up $1,000 for every 25 Nodes Sold</div>
       <a href="https://commerce.autheo.com" target="_blank" rel="noopener" style="display:inline-block; padding:10px 36px; background:#F5A623; color:#000; font-weight:700; font-size:13px; border-radius:8px; text-decoration:none;">Purchase a Node</a>
       <div style="margin-top:10px; display:flex; justify-content:center; gap:24px;">
         <a href="https://www.autheo.com/nodesale" target="_blank" rel="noopener" style="font-size:11px; color:#00E5CC; text-decoration:none;">autheo.com/nodesale &rarr;</a>
         <a href="https://www.autheo.com/nodesale/emission-structure" target="_blank" rel="noopener" style="font-size:11px; color:#00E5CC; text-decoration:none;">Emission Structure &rarr;</a>
       </div>
-      <div style="margin-top:10px; font-size:10px; color:#5A6B7A; letter-spacing:1.5px; text-transform:uppercase;">Infrastructure Ownership &middot; Yield from Network Usage</div>
     </div>
   </div>
 </div>
 
 <div id="token-detail" class="detail-overlay">
   <button class="detail-overlay-close" aria-label="Close">&times;</button>
-  <div style="width:100%; height:100vh; display:flex; flex-direction:column; justify-content:center; padding:0 80px; max-width:1400px; margin:0 auto; box-sizing:border-box;">
+  <div style="width:100%; height:100vh; overflow-y:auto; display:flex; flex-direction:column; justify-content:center; padding:40px 0; max-width:900px; margin:0 auto; box-sizing:border-box;">
 
-    <!-- TOP METRICS — three prices horizontal -->
-    <div style="text-align:center; margin-bottom:8px;">
-      <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:4px; margin-bottom:6px;">TOKEN SALE ($THEO)</div>
-      <div style="font-size:15px; color:#5A6B7A; text-transform:uppercase; letter-spacing:2px; margin-bottom:18px;">The Currency of the Internet Operating System</div>
+    <div style="text-align:center; margin-bottom:16px;">
+      <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:4px; margin-bottom:6px;">Token Sale ($THEO)</div>
+      <div style="font-size:14px; color:#5A6B7A; text-transform:uppercase; letter-spacing:2px; margin-bottom:18px;">The Currency of the Internet Operating System</div>
       <div style="display:flex; justify-content:center; gap:48px; flex-wrap:wrap;">
         <div style="text-align:center;"><div style="font-size:10px; color:#5A6B7A; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Current Price</div><div style="font-size:48px; font-weight:900; color:#F5A623; line-height:1;">$0.01</div></div>
         <div style="text-align:center;"><div style="font-size:10px; color:#5A6B7A; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Presale (45 Days)</div><div style="font-size:48px; font-weight:900; color:#F5A623; line-height:1;">$0.04</div></div>
@@ -1987,50 +1948,31 @@
       <div style="margin-top:12px; font-size:13px; color:#B0B8C1;">Tier-1 CEX + Leading DEX <span style="color:#5A6B7A;">(Agreements in Place)</span></div>
     </div>
 
-    <!-- DIVIDER -->
-    <div style="width:120px; height:2px; background:linear-gradient(90deg, transparent, #00E5CC, transparent); margin:16px auto;"></div>
+    <div style="width:100px; height:2px; background:linear-gradient(90deg, transparent, #00E5CC, transparent); margin:12px auto 20px;"></div>
 
-    <!-- TWO COLUMNS -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:56px; margin-top:8px; align-items:start;">
-
-      <!-- LEFT: Utility + Growth Model -->
-      <div>
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">What THEO Does</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2; margin-bottom:20px;">
-          <li>Powers all transactions across the network</li>
-          <li>Enables identity, authentication, and coordination</li>
-          <li>Executes compute, AI, and application workflows</li>
-          <li>Secures the system through staking and validation</li>
-        </ul>
-
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Growth Model</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2;">
-          <li>Every transaction requires THEO</li>
-          <li>Every application increases demand</li>
-          <li>Every user interaction drives network activity</li>
-        </ul>
+    <!-- 3-column card grid -->
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-bottom:20px;">
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">What THEO Does</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;">Powers all transactions across the network<br>Enables identity, authentication, and coordination<br>Executes compute, AI, and application workflows<br>Secures the system through staking and validation</div>
       </div>
-
-      <!-- RIGHT: Economics + Network Role -->
-      <div>
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Token Economics</h3>
-        <ul class="overview-list" style="font-size:13px; --bullet-color:#F5A623; line-height:2; margin-bottom:20px;">
-          <li>Fixed supply with protocol-defined emissions</li>
-          <li>Required for all system-level activity</li>
-          <li>Demand scales with network usage</li>
-          <li>Embedded across identity, compute, infrastructure</li>
-        </ul>
-
-        <h3 style="font-size:13px; color:#00E5CC; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Network Role</h3>
-        <p style="font-size:12px; color:#B0B8C1; line-height:1.6;">THEO is required for all execution and final settlement across Web2, Web3, and AI &mdash; the base layer currency of the operating system.</p>
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">Token Economics</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;">Fixed supply with protocol-defined emissions<br>Required for all system-level activity<br>Demand scales with network usage<br>Embedded across identity, compute, infrastructure</div>
+      </div>
+      <div style="padding:18px 16px; border-radius:10px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08);">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:10px;">Growth Model</div>
+        <div style="font-size:12px; color:#B0B8C1; line-height:1.8;">Every transaction requires THEO<br>Every application increases demand<br>Every user interaction drives network activity</div>
       </div>
     </div>
 
-    <!-- BOTTOM CTA -->
-    <div style="text-align:center; margin-top:20px; padding-top:16px; border-top:1px solid rgba(0,229,204,0.06);">
+    <div style="text-align:center; padding:14px 24px; border-radius:8px; background:rgba(0,229,204,0.03); border:1px solid rgba(0,229,204,0.08); margin-bottom:20px;">
+      <p style="font-size:12px; color:#B0B8C1; line-height:1.5; margin:0;">THEO is required for all execution and final settlement across Web2, Web3, and AI &mdash; the base layer currency of the operating system.</p>
+    </div>
+
+    <div style="text-align:center; padding-top:16px; border-top:1px solid rgba(0,229,204,0.06);">
       <div style="font-size:11px; color:#EF4444; font-weight:600; letter-spacing:1px; margin-bottom:10px;">OFFER ENDS APRIL 30, 2026</div>
       <a href="mailto:scott@autheo.com" style="display:inline-block; padding:10px 36px; background:#00E5CC; color:#000; font-weight:700; font-size:13px; border-radius:8px; text-decoration:none;">Participate in Token Sale</a>
-      <div style="margin-top:10px; font-size:10px; color:#5A6B7A; letter-spacing:1.5px; text-transform:uppercase;">System Currency &middot; Usage-Driven Demand &middot; Network-Level Utility</div>
     </div>
   </div>
 </div>
