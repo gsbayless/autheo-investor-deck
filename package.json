@@ -1,0 +1,17 @@
+{
+  "name": "autheo-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && node -e \"const fs=require('fs'),g=require('path').join(__dirname,'dist/assets');fs.readdirSync(g).filter(f=>f.endsWith('.css')).forEach(f=>{const p=g+'/'+f;fs.writeFileSync(p,fs.readFileSync(p,'utf8').replace('img.fade-in.visible{box-shadow:none}','img.fade-in.visible{box-shadow:none;mix-blend-mode:lighten}'))})\"",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
