@@ -511,7 +511,7 @@
 
     </div>
 
-    <p class="fade-in" style="text-align:center; margin-top:16px; font-size:14px; color:#00E5CC; font-weight:600; line-height:1.5;">Autheo is not another application or blockchain — it is the coordination layer that sits beneath applications, blockchains, and AI systems.</p>
+    <p class="fade-in" style="text-align:center; margin-top:16px; font-size:14px; color:#00E5CC; font-weight:600; line-height:1.5;">Every layer is modular. Every component is replaceable. The system evolves — without breaking.</p>
   </div>
   <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="section-logo-watermark" aria-hidden="true"><path d="M50 5 L95 95 L72 95 L58 65 L55 65 L55 50 L60 50 L50 30 L40 50 L45 50 L45 65 L42 65 L28 95 L5 95 Z" fill="currentColor"/></svg>
 </section>
@@ -682,44 +682,51 @@
 <section id="performance" class="section">
   <div class="section-bg" style="background-image: url('./assets/section-stack.png')"></div>
   <div class="container">
+    <!-- Header -->
     <div class="fade-in">
       <div class="section-label"><span class="label-rule"></span>PERFORMANCE</div>
       <h2 class="section-heading">Beyond Traditional Blockchain <span class="accent">Limits</span></h2>
+      <p style="font-size:13px; color:#B0B8C1; line-height:1.6; max-width:800px; margin-top:4px;">Autheo's hypergraph-based architecture enables quantum-secure, massively parallel execution designed to scale toward billions of transactions per second.</p>
     </div>
 
-    <div class="fade-in" style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:12px; align-items:center;">
-      <!-- Left: Hero stat + comparison bars -->
-      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
-        <div style="text-align:center; margin-bottom:24px;">
-          <div style="font-size:120px; font-weight:900; color:#00E5CC; line-height:0.9; letter-spacing:-4px;">1B+</div>
-          <div style="font-size:22px; color:#B0B8C1; font-weight:600; margin-top:4px; letter-spacing:4px;">TRANSACTIONS PER SECOND</div>
-        </div>
-        <div style="width:100%; max-width:420px;">
-          <div class="comparison-bar" style="margin-top:0;">
-            <div class="comp-item"><div class="comp-bar" style="width:2%"></div><span class="comp-label" style="font-size:12px;">ETH L1 ~15-30 TPS (L2: 24K, goal: 100K)</span></div>
-            <div class="comp-item"><div class="comp-bar comp-mid" style="width:15%"></div><span class="comp-label" style="font-size:12px;">Solana ~1,100-4,000 TPS</span></div>
-            <div class="comp-item"><div class="comp-bar comp-autheo" style="width:100%"></div><span class="comp-label" style="font-size:12px;">Autheo 1B+ TPS (Hypergraph)</span></div>
-          </div>
-        </div>
-      </div>
+    <!-- Primary metric -->
+    <div class="fade-in" style="text-align:center; margin:20px 0 16px;">
+      <div style="font-size:120px; font-weight:900; color:#00E5CC; line-height:0.9; letter-spacing:-4px;">1B+</div>
+      <div style="font-size:22px; color:#B0B8C1; font-weight:600; margin-top:4px; letter-spacing:4px;">TRANSACTIONS PER SECOND</div>
+    </div>
 
-      <!-- Right: TPS comparison table -->
-      <div>
-        <h3 style="font-size:13px; color:#fff; margin-bottom:8px; font-weight:700;">Real-World TPS Comparison</h3>
-        <table class="comparison-table tps-table" style="width:100%; font-size:12px;">
-          <thead><tr><th>Chain</th><th>Real TPS</th><th>Max Theoretical</th></tr></thead>
-          <tbody>
-            <tr><td>Solana</td><td>~1,100–4,000</td><td>65,000</td></tr>
-            <tr><td>ICP</td><td>~1,035</td><td>209,708</td></tr>
-            <tr><td>BNB Chain</td><td>~183</td><td>2,222</td></tr>
-            <tr><td>Ethereum L1</td><td>~15–30</td><td>~25 (L2: 24K, goal: 100K)</td></tr>
-            <tr><td>Bitcoin</td><td>~7</td><td>~7</td></tr>
-            <tr><td>Qubit</td><td>—</td><td>15,000,000</td></tr>
-            <tr class="tps-autheo-row"><td>Autheo</td><td class="highlight-col">Benchmarked</td><td class="highlight-col">1B+ (Hypergraph)</td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:10px; color:#5A6B7A; margin-top:6px;">Source: Chainspect (April 2026), Bleap Finance</p>
+    <!-- Comparison strip -->
+    <div class="fade-in" style="display:flex; justify-content:center; gap:32px; flex-wrap:wrap; margin-bottom:16px; padding:12px 0; border-top:1px solid rgba(0,229,204,0.06); border-bottom:1px solid rgba(0,229,204,0.06);">
+      <div style="text-align:center;">
+        <div style="font-size:11px; color:#5A6B7A; text-transform:uppercase; letter-spacing:1px;">Ethereum (L1)</div>
+        <div style="font-size:14px; color:#B0B8C1; font-weight:600;">~15–30 TPS <span style="color:#5A6B7A; font-size:11px;">| L2: ~24K (target ~100K)</span></div>
       </div>
+      <div style="text-align:center;">
+        <div style="font-size:11px; color:#5A6B7A; text-transform:uppercase; letter-spacing:1px;">Solana</div>
+        <div style="font-size:14px; color:#B0B8C1; font-weight:600;">~1,000–4,000 TPS</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:11px; color:#00E5CC; text-transform:uppercase; letter-spacing:1px; font-weight:700;">Autheo</div>
+        <div style="font-size:14px; color:#00E5CC; font-weight:700;">1B+ TPS <span style="color:#5A6B7A; font-size:11px;">(Hypergraph)</span></div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="fade-in">
+      <h3 style="font-size:12px; color:#fff; margin-bottom:8px; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Observed vs Theoretical Throughput</h3>
+      <table class="comparison-table tps-table" style="width:100%; font-size:12px;">
+        <thead><tr><th>Chain</th><th>Observed TPS</th><th>Max Theoretical</th></tr></thead>
+        <tbody>
+          <tr><td>Solana</td><td>~1,100–4,000</td><td>65,000</td></tr>
+          <tr><td>ICP</td><td>~1,035</td><td>209,708</td></tr>
+          <tr><td>BNB Chain</td><td>~183</td><td>2,222</td></tr>
+          <tr><td>Ethereum L1</td><td>~15–30</td><td>~25 (L2: 24K, target ~100K)</td></tr>
+          <tr><td>Bitcoin</td><td>~7</td><td>~7</td></tr>
+          <tr><td>Qubit</td><td>—</td><td>15,000,000</td></tr>
+          <tr class="tps-autheo-row"><td>Autheo</td><td class="highlight-col">Benchmarked (internal)</td><td class="highlight-col">1B+ (Hypergraph)</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:10px; color:#5A6B7A; margin-top:6px;">Source: Chainspect (April 2026), Bleap Finance</p>
     </div>
   </div>
   <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="section-logo-watermark" aria-hidden="true"><path d="M50 5 L95 95 L72 95 L58 65 L55 65 L55 50 L60 50 L50 30 L40 50 L45 50 L45 65 L42 65 L28 95 L5 95 Z" fill="currentColor"/></svg>
