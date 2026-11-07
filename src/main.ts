@@ -202,9 +202,9 @@ function initStackDiagram(): void {
   canvas.width = W * 2; canvas.height = H * 2;
   ctx.scale(2, 2); // retina
 
-  // Bottom-up order: Autheo-One is the foundation (largest), Autheo ID at top (smallest)
+  // Bottom-up order: Autheo-One is the foundation (largest), Theo ID at top (smallest)
   const layers = [
-    { label: 'Autheo ID', color: '#34D399' },
+    { label: 'Theo ID', color: '#34D399' },
     { label: 'PQCNet', color: '#F472B6' },
     { label: 'Zer0veil', color: '#818CF8' },
     { label: 'THEO AI', color: '#00E5CC' },
@@ -260,7 +260,7 @@ function initStackDiagram(): void {
     const skew = 0.42;
     const total = layers.length;
 
-    // Draw bottom-up: index 6=Autheo-One (bottom, largest) to index 0=Autheo ID (top, smallest)
+    // Draw bottom-up: index 6=Autheo-One (bottom, largest) to index 0=Theo ID (top, smallest)
     for (let i = total - 1; i >= 0; i--) {
       const layer = layers[i];
       const fromBottom = total - 1 - i; // 0 for top layer, 6 for bottom
